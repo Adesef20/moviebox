@@ -4,9 +4,11 @@ import Image from "next/image";
 const MovieCard = ({ movie }) => {
     if (!movie) return null;
 
-    const imgUrl = movie.poster_path
-        ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
-        : "/placeholder.png";
+const imgUrl =
+    movie.poster_path || movie.backdrop_path
+      ? `https://image.tmdb.org/t/p/w500${movie.poster_path || movie.backdrop_path}`
+      : "/placeholder.png";
+
     return(
         <main className="bg-gray-800 rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
             <Image 

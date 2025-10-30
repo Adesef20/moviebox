@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { fetchMovies } from "../libs/fetchMovies";
 import MovieCard from "../../Components/MovieCard";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+
 
 export default function MoviesPage() {
   const [movies, setMovies] = useState([]);

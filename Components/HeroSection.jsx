@@ -48,7 +48,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="absolute right-10 bottom-10 z-10">
-        <Link href="/movies" className="bg-white text-black px-5 py-2 rounded-lg font-semibold hover:bg-gray-300 transition">
+        <Link href="/Movies" className="bg-white text-black px-5 py-2 rounded-lg font-semibold hover:bg-gray-300 transition">
           View All
         </Link>
       </div>
